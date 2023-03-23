@@ -1,0 +1,30 @@
+resource/pms/config.json
+resource/configstore
+dist
+node_modules
+npm-debug.log
+.idea
+tmp
+
+# linting
+eslint.xml
+.eslintcache
+
+# unit testing & code coverage
+xunit_*.xml
+coverage
+
+# e2e testing
+selenium-debug.log
+tests_output
+
+# env variable settings
+.env
+
+# editor
+.vscode
+
+*.swp
+
+# log file
+*.log

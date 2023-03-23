@@ -1,0 +1,15 @@
+{
+	"app": {
+		"port": 9890,
+		"pcn": {},
+		"pms": {
+			"subscriptionId": 2
+		}
+	},
+	"cli": {
+		"pms": {}
+	},
+	"test": {
+		"foo": "bar"
+	}
+}

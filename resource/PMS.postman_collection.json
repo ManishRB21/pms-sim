@@ -1,0 +1,735 @@
+{
+	"info": {
+		"_postman_id": "d87cb47e-5017-4b4e-8aee-aa069b8c9566",
+		"name": "PMS-Simulator",
+		"description": "REST API test case for PMS-Simulator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. check",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/site",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"site"
+					]
+				},
+				"description": "return 200 ok data with 'true' message"
+			},
+			"response": []
+		},
+		{
+			"name": "2. /details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"details"
+					]
+				},
+				"description": "returns 200 ok with site data"
+			},
+			"response": []
+		},
+		{
+			"name": "3-a. /host",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/host",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"host"
+					]
+				},
+				"description": "return 200 ok data with 'true' message"
+			},
+			"response": []
+		},
+		{
+			"name": "3-b. /host",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "host",
+							"value": "127.0.0.1:9890",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/host",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"host"
+					]
+				},
+				"description": "return 200 ok data with 'true' message"
+			},
+			"response": []
+		},
+		{
+			"name": "4-a. /site",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/site",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"site"
+					]
+				},
+				"description": "return 200 ok data with 'true' message"
+			},
+			"response": []
+		},
+		{
+			"name": "4-b. /site",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1234567",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test_pms",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "USD",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/site",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"site"
+					]
+				},
+				"description": "return 200 ok data with 'true' message"
+			},
+			"response": []
+		},
+		{
+			"name": "5-a. /statuses",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/statuses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"statuses"
+					]
+				},
+				"description": "returns 200 ok with site data"
+			},
+			"response": []
+		},
+		{
+			"name": "6-a. /rooms",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/rooms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"rooms"
+					]
+				},
+				"description": "return 200 ok with guests data"
+			},
+			"response": []
+		},
+		{
+			"name": "6-b. /rooms/:id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/rooms/201",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"rooms",
+						"201"
+					]
+				},
+				"description": "return 200 ok with guests data"
+			},
+			"response": []
+		},
+		{
+			"name": "6-c. /rooms/:roomid/folios/:guestid",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/rooms/111/folios/111-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"rooms",
+						"111",
+						"folios",
+						"111-1"
+					]
+				},
+				"description": "return 200 ok with folio data"
+			},
+			"response": []
+		},
+		{
+			"name": "6-d. /rooms/:roomid/folios/:guestid/folio-items",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"amount\": 21.00,\n\t\"description\": \"Meal\",\n\t\"purchase_id\": \"Breakfast\",\n\t\"revenue_code\": \"2\",\n\t\"subtotal\": { \"1\": 20.00 },\n\t\"tax\": { \"1\": 1.00 }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/rooms/123/folios/123-1/folio-items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"rooms",
+						"123",
+						"folios",
+						"123-1",
+						"folio-items"
+					]
+				},
+				"description": "return 200 ok with folio data"
+			},
+			"response": []
+		},
+		{
+			"name": "6-e. /rooms/:roomid/checkouts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/rooms/1234/checkouts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"rooms",
+						"1234",
+						"checkouts"
+					]
+				},
+				"description": "return 201 created with 'checkout request success' message"
+			},
+			"response": []
+		},
+		{
+			"name": "6-f. /rooms/:roomid/checkouts/:guestid",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "balance",
+							"value": "21",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/rooms/123/checkouts/123-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"rooms",
+						"123",
+						"checkouts",
+						"123-1"
+					]
+				},
+				"description": "return 201 created with 'checkout request success' message"
+			},
+			"response": []
+		},
+		{
+			"name": "6-g. /rooms/:roomid/checkin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Mr. Smile",
+							"type": "text"
+						},
+						{
+							"key": "isSwap",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/rooms/201/checkin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"rooms",
+						"201",
+						"checkin"
+					]
+				},
+				"description": "return 201 created with 'checkout request success' message"
+			},
+			"response": []
+		},
+		{
+			"name": "6-h. /rooms/:roomid/message",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "text",
+							"value": "Hi, there",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/rooms/999/message",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"rooms",
+						"999",
+						"message"
+					]
+				},
+				"description": "return 201 created with 'checkout request success' message"
+			},
+			"response": []
+		},
+		{
+			"name": "7-a. /subscriptions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"PMS#2\",\n  \"callbackUri\": \"http://localhost:8888/test2\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/subscriptions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"subscriptions"
+					]
+				},
+				"description": "return 201 created"
+			},
+			"response": []
+		},
+		{
+			"name": "7-b. /subscriptions/:id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/subscriptions/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"subscriptions",
+						"1"
+					]
+				},
+				"description": "return 200 ok with null body"
+			},
+			"response": []
+		},
+		{
+			"name": "7-c. /subscriptions/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"PMS#3\",\n  \"callbackUri\": \"http://localhost:9888/subscriptions\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/subscriptions/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"subscriptions",
+						"2"
+					]
+				},
+				"description": "returns 200 with subscription data or 404 not found"
+			},
+			"response": []
+		},
+		{
+			"name": "7-d. /subscriptions/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/subscriptions/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"subscriptions",
+						"2"
+					]
+				},
+				"description": "return 200 ok with number 1 (TODO: 200 with response body, 204 with no body)"
+			},
+			"response": []
+		},
+		{
+			"name": "8. /init",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"PMS#1\",\n  \"callbackUri\": \"http://localhost:8888/test\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9890/api/pms/v2/init",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9890",
+					"path": [
+						"api",
+						"pms",
+						"v2",
+						"init"
+					]
+				},
+				"description": "return 201 created"
+			},
+			"response": []
+		}
+	]
+}

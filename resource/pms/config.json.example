@@ -1,0 +1,31 @@
+{
+	"app": {
+		"port": 9890,
+		"logger": {
+			"level": "info",
+			"maxSize": 10000000,
+			"maxFiles": 5,
+			"isZipped": true,
+			"isJson": true,
+			"appLogName": "pms.app.log",
+			"accessLogName": "pms.access.log"
+		},
+		"pcn": {},
+		"pms": {
+			"site": {
+				"id": "1234567",
+				"name": "lg_pms",
+				"currency": "USD"
+			},
+			"status": "up",
+			"subscriptionId": 1
+		},
+		"room": {}
+	},
+	"cli": {
+		"delimiter": "pms~$",
+		"pms": {
+			"host": "http://127.0.0.1:9890"
+		}
+	}
+}
